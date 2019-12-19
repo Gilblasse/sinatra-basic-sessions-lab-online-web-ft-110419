@@ -3,8 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   enable :sessions
   get '/' do
-    
-    session[:value].inspect
+    binding.pry
   end
   
 end
